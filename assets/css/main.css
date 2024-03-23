@@ -3952,7 +3952,7 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
-nav ul {
+nav:not(.homepage-nav) ul {
   display: none;
   position: absolute;
   right: 2em;
@@ -3965,10 +3965,10 @@ nav ul {
   z-index: 1;
 }
 
-nav ul li:not(:first-child) {
+nav:not(.homepage-nav) ul li:not(:first-child) {
   margin-top: 0.5em;
 }
-nav:hover ul,
-nav:focus ul {
+nav:not(.homepage-nav):hover ul,
+nav:not(.homepage-nav):focus ul {
   display: block;
 }
