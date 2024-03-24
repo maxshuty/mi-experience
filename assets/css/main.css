@@ -3447,11 +3447,9 @@ body.is-preload .wrapper.fade > .inner {
 }
 
 #header > nav {
-  -moz-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: right;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #header > nav > ul {
@@ -3952,9 +3950,10 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
-nav:not(.homepage-nav) ul {
+#header > nav ul {
   display: none;
   position: absolute;
+  top: 50px;
   right: 2em;
   border-radius: 4px;
   max-width: 250px;
@@ -3962,13 +3961,14 @@ nav:not(.homepage-nav) ul {
   padding: 1em;
   margin: 1em 0;
   list-style: none;
+  text-align: right;
   z-index: 1;
 }
 
-nav:not(.homepage-nav) ul li:not(:first-child) {
+#header > nav ul li:not(:first-child) {
   margin-top: 0.5em;
 }
-nav:not(.homepage-nav):hover ul,
-nav:not(.homepage-nav):focus ul {
+#header > nav:hover ul,
+#header > nav:focus ul {
   display: block;
 }
