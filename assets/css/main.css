@@ -3972,3 +3972,8 @@ body.is-preload #sidebar nav ul li {
 #header > nav:focus ul {
   display: block;
 }
+
+.email-link {
+  color: #fff;
+  text-decoration: underline;
+}
